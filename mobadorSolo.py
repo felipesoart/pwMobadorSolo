@@ -37,7 +37,7 @@ def atacar_mob():
     print("[INFO] Ataque disparado (1)")    
 
     # Depois coleta itens
-    coleta_itens()  
+    #coleta_itens()  
 
     # Espera 15 segundos
     time.sleep(3)
@@ -46,11 +46,11 @@ def atacar_mob():
     print("[INFO] Ataque disparado (1)")    
 
     # Depois coleta itens
-    coleta_itens()
+    #coleta_itens()
 
 def replay_clicks(repeat_count):    
 
-    time.sleep(5)
+    time.sleep(10)
 
     global stop_flag4
 
@@ -60,7 +60,9 @@ def replay_clicks(repeat_count):
             break
 
         print(f"Repetindo... Rodada {i+1}")
+        
         time.sleep(5)
+      
         selecionar_mob()
         atacar_mob()
         

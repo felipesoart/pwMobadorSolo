@@ -10,7 +10,7 @@ FILENAME = "clicks.json"
 recorded_clicks = []
 mouse_controller = Controller()
 start_time = None
-MAX_DURATION = 180  # 3 minutos em segundos
+MAX_DURATION = 200  # 6 minutos em segundos
 
 # Flag pra parar tudo com ESC
 stop_flag = False
