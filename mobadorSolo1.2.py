@@ -17,13 +17,12 @@ def selecionar_mob():
     print("[INFO] Procurando mob (TAB)")
 
 def coleta_itens():
-    pyautogui.press('4')
+    pyautogui.press('4')    
     print("[INFO] Coletando itens (4)")
 
 def buff():
     pyautogui.press('8')
     print("[INFO] Buffar (8)")
-
 
 def verificar_mob3(nomes_esperados):
     # Flag de retorno
@@ -64,7 +63,6 @@ def verificar_mob3(nomes_esperados):
 
     print("[INFO] MOB NÃO ENCONTRADO!")
     return False
-
 
 def verificar_mob2(nomes_esperados):
 
@@ -151,7 +149,6 @@ def verificar_mob2(nomes_esperados):
     print("[INFO] MOB NÃO ENCONTRADO!")
     return ret
 
-
 def responder_antibot():
     # 📸 Screenshot da pergunta
     pergunta = pyautogui.screenshot(region=(28, 782, 382, 189))  # Ajusta X, Y, Largura, Altura
@@ -225,7 +222,6 @@ def atacar_mob():
     time.sleep(2)
     coleta_itens()
 
-
 def replay_clicks(repeat_count, nome_mob):
 
     time.sleep(10)
@@ -293,7 +289,6 @@ def replay_clicks(repeat_count, nome_mob):
                 print("[INFO] Mob atacado com sucesso!")
                 break  # Sai do while e vai pra próxima rodada
 
-
 def on_press(key):
     global stop_flag
     #if key == keyboard.Key.esc:
@@ -312,4 +307,27 @@ if __name__ == "__main__":
     listener.stop()
 
 #instalar
+
+#PRONT DE COMANDO CMD ABRA COMO ADMINISTRADO 
+
+#✅ 1. Verificar se você tem o Python instalado
+#No terminal (Prompt de Comando ou PowerShell no Windows), digite:
+
+#python --version
+#Se aparecer algo como Python 3.x.x, está tudo certo.
+#Caso não tenha, baixe o Python em python.org e marque a opção "Add Python to PATH" durante a instalação.
+
+#✅ 2. Instalar as bibliotecas necessárias
+#No terminal, execute :
+
+#EXECUTAR CADA COMANDO UM POR VEZ
+
+#pip install pyautogui
+#pip install pynput
+#pip install pytesseract
+#pip install pillow
+
+#3. Instalar o Tesseract OCR (necessário para pytesseract)
+
 #https://github.com/UB-Mannheim/tesseract/wiki
+
